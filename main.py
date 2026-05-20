@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 import ipaddress
 
+#calculate subnet from ip and CDR
 def calculate():
     try:
         ip=ip_entry.get()
@@ -27,6 +28,7 @@ def copy_result():
     root.clipboard_append(result_text.get())
     root.update()
 
+#Interface design
 root = tk.Tk()
 root.title("Subnet Pro")
 root.geometry("400x300")
